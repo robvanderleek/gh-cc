@@ -1,9 +1,22 @@
-fix 🐛 Fix a bug
-feat ✨ Introduce new feature
+refactor :art: 🎨 Improve structure / format of the code
+perf :zap: ⚡️ Improve performance
+refactor :fire: 🔥 Remove code or files.
+fix :bug: 🐛 Fix a bug
+fix :ambulance: 🚑️ Critical hotfix
+feat :sparkles: ✨ Introduce new features
+docs :memo: 📝 Add or update documentation
+build :rocket: 🚀 Deploy stuff
+style :lipstick: 💄 Add or update the UI and style files
+
 build ⬆️ Upgrade dependency
 build ⬇️ Downgrade dependency
+
+build
 ci
+chore
 docs
+feat
+fix
 perf
 refactor
 style
