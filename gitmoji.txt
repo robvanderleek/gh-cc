@@ -1,0 +1,10 @@
+fix 🐛 Fix a bug
+feat ✨ Introduce new feature
+build ⬆️ Upgrade dependency
+build ⬇️ Downgrade dependency
+ci
+docs
+perf
+refactor
+style
+test

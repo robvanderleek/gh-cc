@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -e
+
+args=()
+found_flag=false
+for var in "$@"
+do
+    if [ $found_flag = true ]; then
+        prefix=$(cat gitmoji.txt | fzf --with-nth=2.. --pointer='' --no-unicode --no-scrollbar --no-separator --info=hidden --reverse --height 7 | awk '{print $1": "$2}')
+        args+=("$prefix $var")
+        found_flag=false
+    else
+        args+=($var)
+        if  [[ $var == -* ]] && [[ $var == *m ]]; then
+            found_flag=true 
+        fi
+    fi
+done
+
+echo "${args[@]}"
+# git commit $@
