@@ -33,5 +33,29 @@ build :twisted_rightwards_arrows: 🔀 Merge branches
 build :package: 📦️ Add or update compiled files or packages
 chore :alien: 👽️ Update code due to external API changes
 chore :truck: 🚚 Move or rename resources (e.g.: files, paths, routes)
-
+chore :page_facing_up: 📄 Add or update license
+feat :boom: 💥 Introduce breaking changes
+build :bento: 🍱 Add or update assets
+chore :wheelchair: ♿️ Improve accessibility
+chore :bulb: 💡 Add or update comments in source code
+chore :beers: 🍻 Write code drunkenly
+chore :speech_balloon: 💬 Add or update text and literals
+chore :card_file_box: 🗃️ Perform database related changes
+chore :loud_sound: 🔊 Add or update logs
+chore :mute: 🔇 Remove logs
+chore :busts_in_silhouette: 👥 Add or update contributor(s)
+chore :children_crossing: 🚸 Improve user experience / usability
+build :building_construction: 🏗️ Make architectural changes
+feat :iphone: 📱 Work on responsive design
+test :clown_face: 🤡 Mock things
+chore :egg: 🥚 Add or update an easter egg
+chore :see_no_evil: 🙈 Add or update a .gitignore file
+chore :camera_flash: Add or update snapshots
+test :alembic: ⚗️ Perform experiments
+chore :mag: 🔍️ Improve SEO
+chore :label: 🏷️ Add or update types
+chore :seedling: Add or update seed files
+feat :triangular_flag_on_post: 🚩 Add, update, or remove feature flags
+chore :goal_net: 🥅 Catch errors
+chore :dizzy: 💫 Add or update animations and transitions
 build ci chore docs feat fix perf refactor style test
