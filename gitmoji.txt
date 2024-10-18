@@ -7,17 +7,31 @@ feat :sparkles: ✨ Introduce new features
 docs :memo: 📝 Add or update documentation
 build :rocket: 🚀 Deploy stuff
 style :lipstick: 💄 Add or update the UI and style files
+chore :tada: 🎉 Begin a project
+test :white_check_mark: ✅ Add, update, or pass tests
+fix :lock: 🔒️ Fix security or privacy issues
+chore :closed_lock_with_key: 🔐 Add or update secrets
+build :bookmark: 🔖 Release / Version tags
+chore :rotating_light: 🚨 Fix compiler / linter warnings
+chore :construction: 🚧 Work in progress
+ci :green_heart: 💚 Fix CI Build
+build :arrow_down: ⬇️ Downgrade dependencies
+build :arrow_up: ⬆️ Upgrade dependency
+build :pushpin: 📌 Pin dependencies to specific versions
+ci :construction_worker: 👷 Add or update CI build system
+chore :chart_with_upwards_trend: 📈 Add or update analytics or track code
+refactor :recycle: ♻️ Refactor code
+build :heavy_plus_sign: ➕ Add a dependency
+build :heavy_minus_sign: ➖ Remove a dependency
+build :wrench: 🔧 Add or update configuration files
+chore :hammer: 🔨 Add or update development scripts
+chore :globe_with_meridians: 🌐 Internationalization and localization
+chore :pencil2: ✏️ Fix typos
+chore :poop: 💩 Write bad code that needs to be improved
+build :rewind: ⏪️ Revert changes 
+build :twisted_rightwards_arrows: 🔀 Merge branches
+build :package: 📦️ Add or update compiled files or packages
+chore :alien: 👽️ Update code due to external API changes
+chore :truck: 🚚 Move or rename resources (e.g.: files, paths, routes)
 
-build ⬆️ Upgrade dependency
-build ⬇️ Downgrade dependency
-
-build
-ci
-chore
-docs
-feat
-fix
-perf
-refactor
-style
-test
+build ci chore docs feat fix perf refactor style test
