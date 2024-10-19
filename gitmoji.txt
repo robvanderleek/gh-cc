@@ -1,20 +1,20 @@
-refactor :art: 🎨 Improve structure / format of the code
-perf :zap: ⚡️ Improve performance
-refactor :fire: 🔥 Remove code or files.
+chore :construction: 🚧 Work in progress
 fix :bug: 🐛 Fix a bug
-fix :ambulance: 🚑️ Critical hotfix
 feat :sparkles: ✨ Introduce new features
+ci :green_heart: 💚 Fix CI Build
+test :white_check_mark: ✅ Add, update, or pass tests
 docs :memo: 📝 Add or update documentation
+refactor :fire: 🔥 Remove code or files.
+perf :zap: ⚡️ Improve performance
+refactor :art: 🎨 Improve structure / format of the code
+fix :ambulance: 🚑️ Critical hotfix
 build :rocket: 🚀 Deploy stuff
 style :lipstick: 💄 Add or update the UI and style files
 chore :tada: 🎉 Begin a project
-test :white_check_mark: ✅ Add, update, or pass tests
 fix :lock: 🔒️ Fix security or privacy issues
 chore :closed_lock_with_key: 🔐 Add or update secrets
 build :bookmark: 🔖 Release / Version tags
 chore :rotating_light: 🚨 Fix compiler / linter warnings
-chore :construction: 🚧 Work in progress
-ci :green_heart: 💚 Fix CI Build
 build :arrow_down: ⬇️ Downgrade dependencies
 build :arrow_up: ⬆️ Upgrade dependency
 build :pushpin: 📌 Pin dependencies to specific versions
@@ -58,4 +58,16 @@ chore :seedling: Add or update seed files
 feat :triangular_flag_on_post: 🚩 Add, update, or remove feature flags
 chore :goal_net: 🥅 Catch errors
 chore :dizzy: 💫 Add or update animations and transitions
-build ci chore docs feat fix perf refactor style test
+chore :wastebasket: 🗑️ Deprecate code that needs to be cleaned up
+feat :passport_control: 🛂 Work on code related to authorization, roles and permissions
+fix :adhesive_bandage: 🩹 Simple fix for a non-critical issue
+chore :monocle_face: 🧐 Data exploration/inspection
+chore :coffin: ⚰️ Remove dead code
+test :test_tube: 🧪 Add a failing test
+feat :necktie: 👔 Add or update business logic
+chore :stethoscope: 🩺 Add or update healthcheck
+feat :bricks: 🧱 Infrastructure related changes
+chore :technologist: 🧑 Improve developer experience
+feat :money_with_wings: 💸 Add sponsorships or money related infrastructure
+feat :thread: 🧵 Add or update code related to multithreading or concurrency
+test :safety_vest: 🦺 Add or update code related to validation

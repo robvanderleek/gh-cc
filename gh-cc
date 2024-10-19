@@ -16,13 +16,34 @@ get_cc_prefix() {
         awk '{print $1": "$3}'
 }
 
+has_cc_prefix() {
+    if [[ $1 == build:* ]] ||\
+       [[ $1 == ci:* ]] ||\
+       [[ $1 == chore:* ]] ||\
+       [[ $1 == docs:* ]] ||\
+       [[ $1 == feat:* ]] ||\
+       [[ $1 == fix:* ]] ||\
+       [[ $1 == perf:* ]] ||\
+       [[ $1 == refactor:* ]] ||\
+       [[ $1 == style:*  ]] ||\
+       [[ $1 == test:* ]]; then
+        true
+    else
+        false
+    fi
+}
+
 args=()
 found_flag=false
 for var in "$@"
 do
     if [ $found_flag = true ]; then
-        prefix=$(get_cc_prefix)
-        args+=("$prefix $var")
+        if [ $(has_cc_prefix $var) ]; then
+            args+=("$var")
+        else
+            prefix=$(get_cc_prefix $var)
+            args+=("$prefix $var")
+        fi
         found_flag=false
     else
         args+=($var)
