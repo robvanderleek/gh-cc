@@ -10,13 +10,23 @@
 
 # What is this?
 
-A day in the life of many developers:
+[Conventional Commits](https://www.conventionalcommits.org/) is a convention
+developers use to indicate the meaning of a git commit. For example, if a
+commit fixes a bug in the code, your conventional commit message would look
+something like this:
 
-1. Create a new GitHub Issue to work on something
-2. Create a local branch for that issue
-3. Do coding magic :sparkles: 
+```shell
+fix: 🐛 Do not crash on empty index field
+```
 
-This GH CLI extension automates steps 1 and 2 for you.
+or if your commit updates a project's documentation your conventional commit would look like:
+
+```shell
+docs: 📝 Update FAQ section
+```
+
+This GH CLI extension helps to extend every `git commit` commit message with a
+conventional commit prefix. 
 
 # Installation
 
@@ -43,7 +53,15 @@ Next, install the extension (see above), and type the following inside any
 cloned repository:
 
 ```shell
-gh cc ...
+gh cc -am "commit message here"
+```
+
+This extension passes all arguments on to `git commit`, so to save typing you
+can add the following alias to your shell configuration: `alias gc="gh cc"`.
+The command above then becomes:
+
+```shell
+gc -am "commit message here"
 ```
 
 That's it!
