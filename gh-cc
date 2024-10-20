@@ -33,6 +33,20 @@ has_cc_prefix() {
     fi
 }
 
+get_openai_commit_message() {
+    diff=`git diff | jq -Rsa .`
+    curl -s https://api.openai.com/v1/chat/completions \
+        -H 'Content-Type: application/json' \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -d "{
+            \"model\": \"gpt-3.5-turbo\",
+            \"messages\": [
+                {\"role\": \"system\", \"content\": \"You are a helpful assistant that generates a concise git commit message from the user supplied code diff. Limit the response to 72 characters, do not use emojis.\"},
+                {\"role\": \"user\", \"content\": $diff}
+      ]
+    }" | jq '.choices[0].message.content'
+}
+
 args=()
 found_flag=false
 for var in "$@"
@@ -54,8 +68,15 @@ do
 done
 
 if [ -z "$prefix" ]; then
-    read -p "Commit message: " message
-    prefix=$(get_cc_prefix)
+    if [ -z "$OPENAI_API_KEY" ]; then
+        read -p "Commit message: " message
+        prefix=$(get_cc_prefix)
+    else
+        read -p "Press enter to generate commit message with OpenAI, CTRL+C to exit"
+        message=$(get_openai_commit_message)
+        echo $message
+        prefix=$(get_cc_prefix)
+    fi
     args+=("-m")
     args+=("$prefix $message")
 fi
