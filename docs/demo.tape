@@ -10,7 +10,7 @@ Set WindowBar Colorful
 Set TypingSpeed 70ms
 
 Sleep 500ms
-Type "# Make all your commits pretty:"
+Type "# Turn all your commits into conventional commits:"
 Enter
 Sleep 500ms
 Type 'gh cc -am "fix nasty bug"
